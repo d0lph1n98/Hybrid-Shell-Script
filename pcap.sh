@@ -55,10 +55,10 @@ file = open("$3", "r")
 d = {}
 
 for i in file:
-  print i.strip()
-  if len(i.strip())> 10:
-     k, v = i.strip().split(',')
-     d[k.strip()] = v.strip()
+    print i.strip()
+    if len(i.strip()) > 10:
+        k, v = i.strip().split(',')
+        d[k.strip()] = v.strip()
 
 for k, v in d.items():
   x = k
@@ -90,8 +90,10 @@ file = open("$3", "r")
 d = {}
 
 for i in file:
-  k, v = i.strip().split(',')
-  d[k.strip()] = v.strip()
+    print i.strip()
+    if len(i.strip()) > 18:
+        k, v = i.strip().split(',')
+        d[k.strip()] = v.strip()
 
 for k, v in d.items():
   x = k
